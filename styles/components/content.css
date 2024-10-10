@@ -1,0 +1,86 @@
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* smarthpone */
+@media (min-width: 475px) {
+  .content {
+    gap: 1rem;
+    margin-top: 2rem;
+    background-color: aliceblue;
+  }
+
+  .content__img {
+    width: 16rem;
+    height: 10rem;
+  }
+
+  .content__title {
+    color: var(--clr-tertiary);
+    font-size: var(--size-sm);
+  }
+
+  .content__subtitle {
+    font-size: var(--size-sm);
+  }
+
+  .content__description {
+    font-size: var(--size-sm);
+  }
+}
+
+/* tablet */
+@media (min-width: 768px) {
+  .content {
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+  .content__img {
+    width: 16rem;
+    height: 10rem;
+  }
+
+  .content__title {
+    color: var(--clr-tertiary);
+    font-size: var(--size-base);
+  }
+
+  .content__subtitle {
+    font-size: var(--size-base);
+  }
+
+  .content__description {
+    font-size: var(--size-base);
+  }
+}
+
+/* tablet besar hingga laptop*/
+@media (min-width: 1024px) {
+  .content {
+    gap: 1rem;
+    margin-top: 2rem;
+    background-color:darkgray;
+    align-items: center;
+  }
+
+  .content__img {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .content__title {
+    color: var(--clr-tertiary);
+    font-size: var(--size-xl);
+    line-height: 1;
+  }
+
+  .content__subtitle {
+    font-size: var(--size-lg);
+  }
+
+  .content__description {
+    font-size: var(--size-lg);
+  }
+}

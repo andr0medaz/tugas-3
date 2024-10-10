@@ -1,0 +1,71 @@
+/* design system sederhana */
+:root {
+  /* color */
+  --clr-primary: #020617;
+  --clr-secondary: #f5f5f5;
+  --clr-tertiary: #facc15;
+
+  /* sizes */
+  --size-sm: 0.875rem;
+  --size-base: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+}
+
+/* reset layout */
+* {
+  margin: 0;
+  line-height: calc(1em + 0.5rem);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border: 1px solid red;
+}
+
+.section {
+  margin-top: 5rem;
+}
+
+/* base media query */
+/* smarthpone */
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* tablet */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* tablet besar */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* laptop/desktop */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
